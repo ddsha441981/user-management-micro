@@ -1,0 +1,7 @@
+#spring:
+#  data:
+#    mongodb:
+#      database: test_db
+#      password: root
+#      uri: monodb://localhost:27017
+#      username: root
