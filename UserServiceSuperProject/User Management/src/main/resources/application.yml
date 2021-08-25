@@ -1,7 +1,8 @@
-#spring:
-#  data:
-#    mongodb:
-#      database: test_db
-#      password: root
-#      uri: monodb://localhost:27017
-#      username: root
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      database: user_db
+      uri: mongodb://localhost:27017

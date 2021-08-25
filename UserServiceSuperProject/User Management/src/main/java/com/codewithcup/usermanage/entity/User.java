@@ -63,4 +63,15 @@ public class User {
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
+
+    @Override
+    public String toString() {
+        return "UserPayload{" +
+                "userId='" + userId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", createdDate=" + createdDate +
+                '}';
+    }
 }

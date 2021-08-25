@@ -8,11 +8,11 @@ import java.util.List;
 public interface UserService {
     public UserPayload saveUser(UserPayload userPayload);
 
-    public List<User> getUser();
+    public List<UserPayload> getUser();
 
-    public User getUserById(String userId);
+    public UserPayload findOne(String userId);
 
-    public User updateUser(User user);
+    public UserPayload updateUser(UserPayload userPayload);
 
     public void deleteUser(String userId);
 

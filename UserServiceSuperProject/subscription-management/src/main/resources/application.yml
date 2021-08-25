@@ -1,0 +1,25 @@
+#---
+#server:
+#  port: 8082
+#spring:
+#  datasource:
+#    password: root
+#    url: "jdbc:postgresql://localhost:5432/subscription_db"
+#    username: postgres
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        Dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+#    show-sql: true
+
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      database: subscription_db
+      uri: mongodb://localhost:27017

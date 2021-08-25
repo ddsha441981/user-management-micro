@@ -11,6 +11,7 @@ public class UserPayload {
     private String lastName;
     private Integer age;
     private Date createdDate;
+    private SubscriptionPayload subscriptions;
 
     public UserPayload(String userId, String firstName, String lastName, Integer age, Date createdDate) {
         this.userId = userId;
@@ -36,6 +37,11 @@ public class UserPayload {
         setLastName(user.getLastName());
         setAge(user.getAge());
         setCreatedDate(user.getCreatedDate());
+    }
+
+    public UserPayload(User user, SubscriptionPayload subscriptionPayload) {
+        this(user); // Constructor overloading
+        setSubscriptions(subscriptionPayload);
     }
 
     public String getUserId() {
@@ -78,8 +84,17 @@ public class UserPayload {
         this.createdDate = createdDate;
     }
 
+    public SubscriptionPayload getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(SubscriptionPayload subscriptions) {
+        this.subscriptions = subscriptions;
+    }
+
     public User mapToModel() {
         User user = new User();
         return new User (getFirstName(),getLastName(),getAge());
     }
+
 }

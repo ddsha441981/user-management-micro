@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/User Management/User Management.iml" filepath="$PROJECT_DIR$/User Management/User Management.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserServiceSuperProject.iml" filepath="$PROJECT_DIR$/UserServiceSuperProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/subscription-management/subscription-management.iml" filepath="$PROJECT_DIR$/subscription-management/subscription-management.iml" />
     </modules>
   </component>
 </project>

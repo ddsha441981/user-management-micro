@@ -2,15 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="UserServiceSuperProject" />
+        <module name="subscription-management" />
         <module name="User Management" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="subscription-management" target="1.8" />
       <module name="User Management" target="1.8" />
       <module name="UserServiceSuperProject" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="User Management" options="-parameters" />
       <module name="UserServiceSuperProject" options="-parameters" />
+      <module name="subscription-management" options="-parameters" />
     </option>
   </component>
 </project>
